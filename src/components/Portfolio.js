@@ -1,4 +1,13 @@
 import React from 'react'
+import tech from '../assets/tech-blog-screenshot.png'
+import concert from '../assets/concert-connection.png'
+import image from '../assets/image-ai-screenshot.png'
+import weather from '../assets/weather-dashboard.png'
+import password from '../assets/generate-password.png'
+import scheduler from '../assets/work-day-scheduler.png'
+
+
+
 
 const Portfolio = () => {
 
@@ -7,7 +16,7 @@ const Portfolio = () => {
     {
     name: "Tech Blog",
 
-    img: './images/tech-blog-screenshot.png',
+    img: tech,
 
     alt: 'Tech Blog',
     
@@ -21,7 +30,7 @@ const Portfolio = () => {
     {
       name: "Concert Connection",
 
-      img: './images/concert-connection.png',
+      img: concert,
 
       alt: 'Concert Connection',
     
@@ -29,25 +38,27 @@ const Portfolio = () => {
     
       ghlink: 'https://github.com/ionscion/miniature-garbanzo',
     
-      desc: 'An app to find nearby concerts, be able to purchase tickets for the nearby concerts, and get directions from current location to the concert venue.'
+      desc: 'Find nearby concerts, purchase concert tickets, and get directions from current location to the concert venue.'
     },
     
     {
     name: "Image AI",
 
-    img: './images/image-ai-screenshot.png' ,
+    img: image,
 
     alt: 'Image AI',
     
     link: 'https://imageai.herokuapp.com',
+
+    ghlink: 'https://github.com/Nmargolis00/image-AI',
     
-    desc: 'An app utilizing the DALL-E API to generate images from user prompts, which allows the user to sign-in and save their images and/or share them to a public community main page.'
+    desc: 'Utilizes the DALL-E API to generate images from user prompts, which allows the user to sign-in and save their images and/or share them to a public community main page.'
     },
     
     {
       name: "Weather Dashboard",
 
-      img: './images/weather-dashboard.png' ,
+      img: weather,
 
       alt: 'Weather Dashboard',
     
@@ -55,14 +66,14 @@ const Portfolio = () => {
     
       ghlink: 'https://github.com/999888Z/current-weather-app',
     
-      desc: 'An app that allows the user to input any city in the world and be presented with the city name, date, an emoji representing the city current weather condition, and the temperature, humidity, and windspeed, as well as a five-day forecast with the same elements.'
+      desc: 'Allows the user to input any city in the world and will then present the city name, current date, an emoji representing current weather condition, and the temperature, humidity, and windspeed, as well as a five-day forecast with the same elements.'
     
     },
     
     {
       name: "Password Generator",
 
-      img: './images/generate-password.png' ,
+      img: password,
 
       alt: 'Password Generator',
     
@@ -70,14 +81,14 @@ const Portfolio = () => {
     
       ghlink: 'https://github.com/999888Z/Password-Generator',
     
-      desc: 'An app where a user is prompted to choose a password length between 8 and 128 and is then asked to confirm four prompts (lowercase, uppercase, numbers and special characters). At the completion of these prompts, the user will be shown their unique, randomly-generated password.'
+      desc: 'User is prompted to choose a password length between 8 and 128 and is then asked to confirm four prompts (lowercase, uppercase, numbers and special characters). The user will then be shown their unique, randomly-generated password.'
     
     },
     
     {
       name: "Work-Day Scheduler",
 
-      img: '/images/work-day-scheduler.png',
+      img: scheduler,
 
       alt: 'Work-Day Scheduler',
     
@@ -85,36 +96,30 @@ const Portfolio = () => {
     
       ghlink: 'https://github.com/999888Z/Work-Day-Scheduler',
     
-      desc: 'An app that allows the user to input text into a timeblock for each hour of the workday. The text can be saved by clicking a "lock" button at the end of each timeblock, and the text inputted will persist upon reloading of the page due to local storage being utilized. As the day progresses, past hours will be grey in color, the current hour will be red, and future hours will be green.'
+      desc: 'Allows the user to input text into a timeblock for each hour of the workday and save it by clicking a "lock" button at the end of each timeblock. Local storage is utilized, so the text persists upon page reload. Past hours are grey in color, the current hour is red, and future hours are green.'
     
     },
     
     ]
 
   return (
-    <div>
+    <div className= 'container'>
+      <div className= 'row'>
       {projects.map((project) =>   
       <div className="card" style= {{width: "18rem"}}>
-  <img src={project.img} className="card-img-top" alt={project.alt}/>
+  <a href= {project.link}><img src={project.img} className="card-img-top" alt={project.alt} /></a>
   <div className="card-body">
+
+    <h4>{project.name}</h4>
     <p className="card-text">{project.desc}</p>
+    <a href= {project.ghlink}>GitHub</a>
   </div>
 </div>
 )}
+</div>
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default Portfolio
