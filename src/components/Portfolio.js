@@ -104,9 +104,9 @@ const Portfolio = () => {
 
   return (
     <div className= 'container'>
-      <div className= 'row'>
+      <div className= 'row' style={{display: "flex", justifyContent: "center"}}>
       {projects.map((project) =>   
-      <div className="card" style= {{width: "18rem"}}>
+      <div className="card" style= {{width: "18rem", marginRight:"60px", marginBottom: "20px", borderRadius: "20px", padding: "8px"}}>
   <a href= {project.link}><img src={project.img} className="card-img-top" alt={project.alt} /></a>
   <div className="card-body">
 
