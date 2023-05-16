@@ -10,7 +10,7 @@ const Contact = () => {
   const [messageError, setMessageError] = useState(false);
 
   const validateEmail = (email) => {
-    // A basic email validation regex
+   
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
@@ -57,10 +57,12 @@ const Contact = () => {
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
+        <br/>
         <input
           type="text"
           id="name"
           name="name"
+          className="name-input" 
           value={name}
           onChange={handleNameChange}
           onBlur={() => setNameError(!name)}
@@ -69,10 +71,12 @@ const Contact = () => {
       </div>
       <div>
         <label htmlFor="email">Email:</label>
+        <br/>
         <input
           type="email"
           id="email"
           name="email"
+          className="name-input"
           value={email}
           onChange={handleEmailChange}
           onBlur={() => setEmailError(!validateEmail(email))}
@@ -83,9 +87,12 @@ const Contact = () => {
       </div>
       <div>
         <label htmlFor="message">Message:</label>
+        <br/>
         <textarea
           id="message"
           name="message"
+          style={{width: "25%", }}
+          rows="7"
           value={message}
           onChange={handleMessageChange}
           onBlur={() => setMessageError(!message)}
@@ -95,7 +102,7 @@ const Contact = () => {
         )}
       </div>
       {/* <a href="mailto:johnwilday@gmail.com" target="_blank" rel='noreferrer'>johnwilday@gmail.com</a> */}
-      <button type="submit">Submit</button>
+      <button className="form-btn" type="submit">Submit</button>
     </form>
   );
 };

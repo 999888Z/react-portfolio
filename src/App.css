@@ -1,45 +1,61 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .activeTab {
-  background-color: #61dafb;
-  font-weight: bolder;
+  background-color: #003764;
+  color: #6ca6d9;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
 }
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.head-btn {
   color: white;
+  background-color: #003764;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.foot {
+ 
+  background-color: #6ca6d9;
+}
+
+.foot2 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  margin-top: 25px;
+}
+
+form {
+  text-align: center;
+  margin-top: 30px;
+ 
 }
 
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-input {
+  width: 25%;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-btn {
+  margin-bottom: 8px;
+  background-color: #003764;
+  color: white;
+  border-radius: 5px;
 }
+
+
+
+
