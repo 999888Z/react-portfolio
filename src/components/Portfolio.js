@@ -103,10 +103,11 @@ const Portfolio = () => {
     ]
 
   return (
-    <div className= 'container'>
+    <div className="full-bkg" style={{marginTop: "-16px"}}>
+    <div className= 'container' style={{marginTop: "16px"}}>
       <div className= 'row' style={{display: "flex", justifyContent: "center"}}>
       {projects.map((project) =>   
-      <div className="card" style= {{width: "18rem", marginRight:"60px", marginBottom: "20px", borderRadius: "20px", padding: "8px"}}>
+      <div className="card" style= {{width: "18rem", marginRight:"60px", marginBottom: "20px", borderRadius: "20px", padding: "8px", marginTop: "20px"}}>
   <a href= {project.link}><img src={project.img} className="card-img-top" alt={project.alt} /></a>
   <div className="card-body">
 
@@ -117,6 +118,7 @@ const Portfolio = () => {
 </div>
 )}
 </div>
+    </div>
     </div>
   )
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div>
-      <div style={{ textAlign: "center", marginBottom: "50px"}}>
+    <div className="full-bkg" style={{marginTop: "-16px"}}>
+      <div style={{ textAlign: "center", marginBottom: "50px", color: "white"}}>
         <h3>Resume</h3>
         <p>
           Download my{" "}
@@ -15,7 +15,7 @@ const Resume = () => {
           </a>
         </p>
       </div>
-      <div className="container" style={{marginBottom: "60px"}}>
+      <div className="container" style={{color: "white"}}>
         <div className="row">
           <div className="col" style={{marginLeft: "190px"}}>
             <h3>Front-end Proficiencies</h3>
@@ -31,7 +31,7 @@ const Resume = () => {
               <li>Bootstrap</li>
             </ul>
           </div>
-          <div className="col">
+          <div className="col" >
             <h3>Back-end Proficiencies</h3>
             <ul>
               <li>APIs</li>
@@ -42,7 +42,7 @@ const Resume = () => {
               <li>MongoDB</li>
               <li>Mongoose</li>
               <li>REST</li>
-              <li>GraphQL</li>
+              <li style={{marginBottom: "100px"}}>GraphQL</li>
             </ul>
           </div>
         </div>

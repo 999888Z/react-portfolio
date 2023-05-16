@@ -54,6 +54,7 @@ const Contact = () => {
   };
 
   return (
+    <div className="full-bkg" style={{marginTop: "-30px"}}>
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
@@ -101,9 +102,10 @@ const Contact = () => {
           <span style={{ color: "red" }}>Please enter a message</span>
         )}
       </div>
-      {/* <a href="mailto:johnwilday@gmail.com" target="_blank" rel='noreferrer'>johnwilday@gmail.com</a> */}
-      <button className="form-btn" type="submit">Submit</button>
+      
+      <button style={{marginBottom: "55px"}} className="form-btn" type="submit">Submit</button>
     </form>
+    </div>
   );
 };
   

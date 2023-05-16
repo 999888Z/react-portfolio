@@ -6,6 +6,12 @@
   border: none;
 }
 
+.full-bkg {
+background-image: linear-gradient(to right,#e2211c, #003764 );
+height: 100%;
+
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -49,24 +55,27 @@ border-radius: 50%;
   background-color: aqua;
 }
 .foot {
-  background-color: #6ca6d9;
+  background-image: linear-gradient(to left,#e2211c, #003764 );
+  border-top: 10px solid black;
 }
 
 .foot2 {
   display: flex;
   justify-content: space-evenly;
-  height: 80px;
+  height: 100px;
   margin-top: 25px;
 }
 
 form {
   text-align: center;
   margin-top: 30px;
+  color: white;
 }
 
 .name-input {
   width: 25%;
   margin-bottom: 40px;
+  
 }
 
 .form-btn {

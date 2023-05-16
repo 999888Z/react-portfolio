@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="foot">
-   <h2 style={{textAlign: "center", color: "#e2211c"}}>My Links</h2>
+   <h2 style={{textAlign: "center", color: "white"}}>My Links</h2>
     <div className="foot2">
     
       <a href="https://linkedin.com/in/johnwilday" target="_blank"rel='noreferrer'><i className="fa-brands fa-linkedin fa-3x"></i></a>

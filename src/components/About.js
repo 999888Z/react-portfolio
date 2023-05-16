@@ -1,9 +1,10 @@
 import React from 'react'
 import boss from '../assets/image.png'
+
 const About = () => {
   return (
     <div>
-      <div className="about">
+      <div className="about full-bkg">
 
       <div className="container" style={{marginBottom: "60px"}}>
         <div className="row">
