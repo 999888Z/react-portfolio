@@ -103,7 +103,7 @@ const Portfolio = () => {
     ]
 
   return (
-    <div className="full-bkg" style={{marginTop: "-16px"}}>
+    <div className="port" style={{marginTop: "-16px"}}>
     <div className= 'container' style={{marginTop: "16px"}}>
       <div className= 'row' style={{display: "flex", justifyContent: "center"}}>
       {projects.map((project) =>   
