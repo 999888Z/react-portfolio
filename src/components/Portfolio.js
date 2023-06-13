@@ -71,17 +71,17 @@ const Portfolio = () => {
     },
     
     {
-      name: "Password Generator",
+      name: "Workout Wizard",
 
-      img: password,
+      img: workout,
 
-      alt: 'Password Generator',
+      alt: 'Workout Wizard',
     
-      link: 'https://999888z.github.io/Password-Generator/',
+      link: 'https://workout-wizard-app-99.herokuapp.com/',
     
-      ghlink: 'https://github.com/999888Z/Password-Generator',
+      ghlink: 'https://github.com/999888Z/workout-wizard-app',
     
-      desc: 'User is prompted to choose a password length between 8 and 128 and is then asked to confirm four prompts (lowercase, uppercase, numbers and special characters). The user will then be shown their unique, randomly-generated password.'
+      desc: 'User is prompted to sign up or sign in. Once authorized, they can search the site by target body area and save an exercise program to their profile.'
     
     },
     
