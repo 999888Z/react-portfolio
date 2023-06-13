@@ -3,7 +3,7 @@ import tech from '../assets/tech-blog-screenshot.png'
 import concert from '../assets/concert-connection.png'
 import image from '../assets/image-ai-screenshot.png'
 import weather from '../assets/weather-dashboard.png'
-import password from '../assets/generate-password.png'
+import workout from '../assets/workout-wizard.png'
 import scheduler from '../assets/work-day-scheduler.png'
 
 
