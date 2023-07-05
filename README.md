@@ -6,7 +6,7 @@ An app that presents my web developer portfolio.
 
 
 ## Screenshot of Application
-<img src="./src/assets/portfolio-screenshot.png" alt="screenshot">
+<img src="./src/assets/react-portfolio-screenshot.png" alt="screenshot">
 
 ## Table of Contents
 - [Installation](#Installation)
