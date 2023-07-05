@@ -4,7 +4,7 @@ import concert from '../assets/concert-connection.png'
 import image from '../assets/image-ai-screenshot.png'
 import weather from '../assets/weather-dashboard.png'
 import workout from '../assets/workout-wizard.png'
-import scheduler from '../assets/work-day-scheduler.png'
+import car from '../assets/carma.png'
 
 
 
@@ -12,20 +12,36 @@ import scheduler from '../assets/work-day-scheduler.png'
 const Portfolio = () => {
 
   const projects = [
+    {
+      name: "Carma",
+
+      img: car,
+
+      alt: 'Carma',
+    
+      link: 'https://carma-car-rental.vercel.app/',
+    
+      ghlink: 'https://github.com/Hoffalypse/carma-car-nextjs',
+    
+      desc: 'A mock car-rental application showcasing skills in NextJS, TypeScript, Server-Side Rendering, TailwindCSS and using HeadlessUI components. This app features a very modern UI/UX and completely responsive interface.'
+    
+    },
 
     {
-    name: "Tech Blog",
+      name: "Workout Wizard",
 
-    img: tech,
+      img: workout,
 
-    alt: 'Tech Blog',
+      alt: 'Workout Wizard',
     
-    link: 'https://tech-blog99.herokuapp.com/',
+      link: 'https://workout-wizard-app-99.herokuapp.com/',
     
-    ghlink: 'https://github.com/999888Z/tech-blog',
+      ghlink: 'https://github.com/999888Z/workout-wizard-app',
     
-    desc: 'A tech blog with user posts and comments on posts from other users.'
+      desc: 'User is prompted to sign up or sign in. Once authorized, they can search the site by target body area and save an exercise program to their profile.'
+    
     },
+
     
     {
       name: "Concert Connection",
@@ -69,36 +85,23 @@ const Portfolio = () => {
       desc: 'Allows the user to input any city in the world and will then present the city name, current date, an emoji representing current weather condition, and the temperature, humidity, and windspeed, as well as a five-day forecast with the same elements.'
     
     },
-    
     {
-      name: "Workout Wizard",
-
-      img: workout,
-
-      alt: 'Workout Wizard',
+      name: "Tech Blog",
+  
+      img: tech,
+  
+      alt: 'Tech Blog',
+      
+      link: 'https://tech-blog99.herokuapp.com/',
+      
+      ghlink: 'https://github.com/999888Z/tech-blog',
+      
+      desc: 'A tech blog with user posts and comments on posts from other users.'
+      },
     
-      link: 'https://workout-wizard-app-99.herokuapp.com/',
     
-      ghlink: 'https://github.com/999888Z/workout-wizard-app',
     
-      desc: 'User is prompted to sign up or sign in. Once authorized, they can search the site by target body area and save an exercise program to their profile.'
     
-    },
-    
-    {
-      name: "Work-Day Scheduler",
-
-      img: scheduler,
-
-      alt: 'Work-Day Scheduler',
-    
-      link: 'https://999888z.github.io/Work-Day-Scheduler/',
-    
-      ghlink: 'https://github.com/999888Z/Work-Day-Scheduler',
-    
-      desc: 'Allows the user to input text into a timeblock for each hour of the workday and save it by clicking a "lock" button at the end of each timeblock. Local storage is utilized, so the text persists upon page reload. Past hours are grey in color, the current hour is red, and future hours are green.'
-    
-    },
     
     ]
 
