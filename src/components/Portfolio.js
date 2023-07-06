@@ -96,7 +96,7 @@ const Portfolio = () => {
       
       ghlink: 'https://github.com/999888Z/tech-blog',
       
-      desc: 'A tech blog with user posts and comments on posts from other users.'
+      desc: 'A modern tech blog with user posts and comments on posts from other users.'
       },
     
     
