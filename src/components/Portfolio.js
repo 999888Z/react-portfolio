@@ -64,9 +64,9 @@ const Portfolio = () => {
 
     alt: 'Image AI',
     
-    link: 'https://imageai.herokuapp.com',
+    link: 'https://hoffoto.netlify.app/',
 
-    ghlink: 'https://github.com/Nmargolis00/image-AI',
+    ghlink: 'https://github.com/999888Z/image-AI',
     
     desc: 'Utilizes the DALL-E API to generate images from user prompts, which allows the user to sign-in and save their images and/or share them to a public community main page.'
     },
